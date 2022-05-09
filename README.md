@@ -24,10 +24,23 @@ python3 matcher.py /path/to/vireo/dir/ /path/to/outdir/
 </pre>
 
 
+Optional parameters
+----------
 
+**--samplesheet**:
 The last directory name is used as pool name. If you would like to convert this to a different ID,
 you can give --samplesheet <file> option, where the
 first column matches with the directory name,
 and 4th column with the new name you want to give
 
-By default donors are matched if they have a genotype correlation > 0.8. This can be adjusted with the --min_cor_threshold option.
+**--min\_cor\_threshold option.**: By default donors are matched if they have a genotype correlation > 0.8. This can be adjusted with the --min_cor_threshold option.
+
+Output
+------
+
+Two outputs written to the  /path/to/outdir/ directory:  
+-  matched\_donors.txt: tab delimited file with 3 columns: new\_donor, sample, and old\_donor. 
+
+**new\_donor**: is matched between pools (e.g. if new\_donor is donor1 for pool1 and pool2, then this is the same donor in both pools)  
+**sample**: the name of the pool  
+**old\_donor**: the donor as recorded by vireo
