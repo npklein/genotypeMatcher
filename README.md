@@ -30,3 +30,4 @@ you can give --samplesheet <file> option, where the
 first column matches with the directory name,
 and 4th column with the new name you want to give
 
+By default donors are matched if they have a genotype correlation > 0.8. This can be adjusted with the --min_cor_threshold option.
