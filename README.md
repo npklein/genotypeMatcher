@@ -39,8 +39,10 @@ Output
 ------
 
 Two outputs written to the  /path/to/outdir/ directory:  
--  matched\_donors.txt: tab delimited file with 3 columns: new\_donor, sample, and old\_donor. 
 
-**new\_donor**: is matched between pools (e.g. if new\_donor is donor1 for pool1 and pool2, then this is the same donor in both pools)  
+-  **matched\_donors.txt**: tab delimited file with 3 columns: new\_donor, sample, and old\_donor. 
+<br>**new\_donor**: is matched between pools (e.g. if new\_donor is donor1 for pool1 and pool2, then this is the same donor in both pools)  
 **sample**: the name of the pool  
 **old\_donor**: the donor as recorded by vireo
+
+- **correlations.png** Correlation heatmap between all donors of all pools. Double check this to see if --min\_cor\_threshold is set correctly
